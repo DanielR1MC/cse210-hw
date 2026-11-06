@@ -32,5 +32,7 @@ class Program
         Console.WriteLine($"The total sum is {sum}");
         Console.WriteLine($"The average number is {average}");
         Console.WriteLine($"The largest number is {largest}");
+        Console.WriteLine("The sortest list is: ");
+        foreach (float n in numbers){Console.WriteLine(n);}
     }
 }
