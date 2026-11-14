@@ -10,12 +10,10 @@ class Program
         
         PromptGenerator promptGenerator = new PromptGenerator();
         Journal theJournal = new Journal();
-
+        Console.WriteLine("Welcome to the Journal Program!");
         while (ifnumber != "5")
         {
-            Console.WriteLine("Welcome to the Journal Program!");
             Console.WriteLine("Please Select one of the following choices");
-            Console.WriteLine("");
             Console.WriteLine("1.- Write");
             Console.WriteLine("2.- Display");
             Console.WriteLine("3.- Load (Only if you have a file!)");
@@ -51,14 +49,14 @@ class Program
                 Console.Write("What is the filename? ");
                 string file = Console.ReadLine();
                 theJournal.LoadFromFile(file);
-                Console.Write("Loading....");
+                Console.WriteLine("Loading....");
             }
             else if (ifnumber == "4")
             {
                 Console.Write("What is the filename? ");
                 string file = Console.ReadLine();
                 theJournal.SaveToFile(file);
-                Console.Write("Saving the file....");
+                Console.WriteLine("Saving the file....");
             }
             else if (ifnumber == "5")
             {
