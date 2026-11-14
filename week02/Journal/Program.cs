@@ -51,12 +51,14 @@ class Program
                 Console.Write("What is the filename? ");
                 string file = Console.ReadLine();
                 theJournal.LoadFromFile(file);
+                Console.Write("Loading....");
             }
             else if (ifnumber == "4")
             {
                 Console.Write("What is the filename? ");
                 string file = Console.ReadLine();
                 theJournal.SaveToFile(file);
+                Console.Write("Saving the file....");
             }
             else if (ifnumber == "5")
             {
