@@ -15,10 +15,10 @@ public class Journal
         { e.Display(); }
     }
 
-    public void SaveToFile(string Journal)
+    public void SaveToFile(string file)
     {
 
-        using (StreamWriter outputFile = new StreamWriter(Journal))
+        using (StreamWriter outputFile = new StreamWriter(file))
         {
             foreach (Entry e in _entries)
             {
