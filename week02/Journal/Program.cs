@@ -18,8 +18,8 @@ class Program
             Console.WriteLine("");
             Console.WriteLine("1.- Write");
             Console.WriteLine("2.- Display");
-            Console.WriteLine("3.- Load");
-            Console.WriteLine("4.- Save");
+            Console.WriteLine("3.- Load (Only if you have a file!)");
+            Console.WriteLine("4.- Save (Try this first if you don't have a file!)");
             Console.WriteLine("5.- Quit");
             Console.Write("What would you like to do? ");
             ifnumber = (Console.ReadLine());
