@@ -58,19 +58,20 @@ class Program
             }
             else if (ifnumber == "2")
             {
-
+                Console.Write("Enter top number: ");
+                int top = int.Parse(Console.ReadLine());
+                fraction.SetTop(top);
             }
             else if (ifnumber == "3")
             {
-
+                Console.Write("Enter bottom number: ");
+                int bottom = int.Parse(Console.ReadLine());
+                fraction.SetBottom(bottom);
             }
             else if (ifnumber == "4")
             {
-
-            }
-            else if (ifnumber == "5")
-            {
-
+                Console.WriteLine(fraction.GetFractionString());
+                Console.WriteLine(fraction.GetDecimalValue());
             }
             else {Console.WriteLine("Are you pretty sure about your input? Please Try again!!");}
         }
