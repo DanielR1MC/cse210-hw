@@ -73,6 +73,10 @@ class Program
                 Console.WriteLine(fraction.GetFractionString());
                 Console.WriteLine(fraction.GetDecimalValue());
             }
+            else if (ifnumber == "5")
+            {
+                Console.WriteLine("Thanks for try this. See you later!");
+            }
             else {Console.WriteLine("Are you pretty sure about your input? Please Try again!!");}
         }
     }
