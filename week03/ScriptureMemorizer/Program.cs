@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 
 // Creativity
-// 1. There are more than one scripture, that choose itself randomly
-// 2. The user can choose how many words hide (If there is no imput, 3 word will hide itself)
-// 3. There is a spicific class to hide the words (Hider)
+// There are more than one scripture, that choose itself randomly
+// The user can choose how many words hide (If there is no innput, 3 words will hide itself)
+// There is a specific class to hide the words (Hider)
 
 
 class Program
