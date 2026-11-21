@@ -13,9 +13,7 @@ public class Scripture
 
         string[] parts = text.Split(' ');
         foreach (string part in parts)
-        {
-            _words.Add(new Word(part));
-        }
+        {_words.Add(new Word(part));}
     }
 
     public void HideRandomWords(int numberToHide)
@@ -29,9 +27,7 @@ public class Scripture
         string wordsText = "";
 
         foreach (Word word in _words)
-        {
-            wordsText += word.GetDisplayText() + " ";
-        }
+        {wordsText += word.GetDisplayText() + " ";}
 
         return $"{_reference.GetDisplayText()} - {wordsText.Trim()}";
     }
@@ -41,9 +37,7 @@ public class Scripture
         foreach (Word word in _words)
         {
             if (!word.IsHidden())
-            {
-                return false;
-            }
+            {return false;}
         }
         return true;
     }
