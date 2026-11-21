@@ -4,7 +4,6 @@ using System.Collections.Generic;
 public class Hider
 {
     private Random _random;
-
     public Hider()
     {
         _random = new Random();
@@ -17,12 +16,12 @@ public class Hider
         foreach (Word word in words)
         {
             if (!word.IsHidden())
-            {
-                visibleWords.Add(word);
-            }
+            {visibleWords.Add(word);}
         }
 
+
         int countToHide = Math.Min(numberToHide, visibleWords.Count);
+
 
         for (int i = 0; i < countToHide; i++)
         {

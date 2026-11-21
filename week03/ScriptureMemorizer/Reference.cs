@@ -28,13 +28,11 @@ public class Reference
 
     public string GetDisplayText()
     {
+        
         if (_hasEndVerse)
-        {
-            return $"{_book} {_chapter}:{_verse}-{_endVerse}";
-        }
+        {return $"{_book} {_chapter}:{_verse}-{_endVerse}";}
+
         else
-        {
-            return $"{_book} {_chapter}:{_verse}";
-        }
+        {return $"{_book} {_chapter}:{_verse}";}
     }
 }
